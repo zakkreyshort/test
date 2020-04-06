@@ -5,7 +5,7 @@ namespace CurrentMood.Models
 {
   public class CurrentMoodContext : IdentityDbContext<ApplicationUser>
   {
-    public DbSet<Message> Messages { get; set; }
+    public DbSet<Chat> Chats { get; set; }
     public CurrentMoodContext(DbContextOptions options) : base(options) { }
   }
 } 
